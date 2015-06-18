@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Created by juan on 6/18/15.
  */
-public class Administrator {
+public class Administrator extends User {
     private List<String> permissions = new ArrayList<String>();
     private List<String> roles = new ArrayList<String>();
 
