@@ -10,6 +10,15 @@ public class Order {
     private Date creationDate;
     private String dateShipped;
     private String status;
+    private Bill bill;
+
+    public Bill getBill() {
+        return bill;
+    }
+
+    public void setBill(Bill bill) {
+        this.bill = bill;
+    }
 
     public int getOrderId() {
         return orderId;
