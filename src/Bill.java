@@ -30,4 +30,8 @@ public class Bill {
         return totalCost*(desc/100);
 
     }
+
+    public Bill(long totalCost) {
+        this.totalCost = totalCost;
+    }
 }
