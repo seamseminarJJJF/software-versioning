@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Created by juan on 6/18/15.
  *
@@ -7,6 +9,15 @@ public class Customer extends User{
     private long creditCard;
     private String[] interests;
     private String postalAddress;
+    private ArrayList<Order> orders;
+
+    public ArrayList<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(ArrayList<Order> orders) {
+        this.orders = orders;
+    }
 
     public void addInterest(String interest){
         for(int i=0;i<interests.length;i++){
