@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -11,24 +10,6 @@ public class Order {
     private Date creationDate;
     private String dateShipped;
     private String status;
-    private Bill bill;
-    public ArrayList<Product> products;
-
-    public Bill getBill() {
-        return bill;
-    }
-
-    public ArrayList<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts(ArrayList<Product> products) {
-        this.products = products;
-    }
-
-    public void setBill(Bill bill) {
-        this.bill = bill;
-    }
 
     public int getOrderId() {
         return orderId;
