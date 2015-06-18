@@ -54,6 +54,10 @@ public class Order {
         this.dateShipped = dateShipped;
     }
 
+    public Order(int orderId) {
+        this.orderId = orderId;
+    }
+
     public String getStatus() {
         return status;
     }
