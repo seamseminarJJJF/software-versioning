@@ -11,7 +11,12 @@ public class Customer extends User{
     private String postalAddress;
     private ArrayList<Order> orders;
 
+    public Customer(long creditCard) {
+        this.creditCard = creditCard;
+    }
+
     public Customer(String postalAddress, long creditCard) {
+
         this.postalAddress = postalAddress;
         this.creditCard = creditCard;
     }
