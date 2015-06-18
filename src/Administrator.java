@@ -23,4 +23,20 @@ public class Administrator {
     public void setPermissions(List<String> permissions) {
         this.permissions = permissions;
     }
+
+    public boolean addRole(String role) {
+        return roles.add(role);
+    }
+
+    public boolean removeRole(String role) {
+        return roles.remove(role);
+    }
+
+    public boolean addPermission(String permission) {
+        return permissions.add(permission);
+    }
+
+    public boolean removePermission(String permission) {
+        return permissions.remove(permission);
+    }
 }
