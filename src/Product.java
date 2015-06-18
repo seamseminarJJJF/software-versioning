@@ -39,4 +39,11 @@ public class Product {
     public void setPrice(long price) {
         this.price = price;
     }
+
+    public Product(int productId, String category, String description, long price) {
+        this.productId = productId;
+        this.category = category;
+        this.description = description;
+        this.price = price;
+    }
 }
