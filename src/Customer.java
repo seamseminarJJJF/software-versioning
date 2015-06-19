@@ -7,18 +7,22 @@ import java.util.ArrayList;
 public class Customer extends User{
 
     private long creditCard;
-    private String[] interests;
+    private ArrayList<String> interests;
     private String postalAddress;
     private ArrayList<Order> orders;
 
     public Customer(long creditCard) {
         this.creditCard = creditCard;
+	interests = new <String> ArrayList();
+	interests = new <Order> ArrayList();
     }
 
     public Customer(String postalAddress, long creditCard) {
 
         this.postalAddress = postalAddress;
         this.creditCard = creditCard;
+	interests = new <String> ArrayList();
+	interests = new <Order> ArrayList();
     }
 
     public ArrayList<Order> getOrders() {
@@ -30,19 +34,15 @@ public class Customer extends User{
     }
 
     public void addInterest(String interest){
-        for(int i=0;i<interests.length;i++){
-            if(interests[i]==null){
-                interests[i]= interest;
-            }
-        }
+ 	interests.add(interest);
     }
 
     private void removeInterest(String interest){
-        for(int i=0;i<interests.length;i++){
-            if(interests[i].equals(interest)){
-                interests[i] = null;
-            }
-        }
+        for (int i=0 ; i<interests.size();i++){
+		if(interests.get(i).equals(interest)){
+			interests.remove(i);
+		}
+	}
     }
 
     public long getCreditCard() {
