@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by juan on 6/18/15.
@@ -10,6 +12,7 @@ public class Order {
     private Date creationDate;
     private String dateShipped;
     private String status;
+    private List<Product> products = new ArrayList<Product>();
 
     public Bill getBill() {
         return bill;
@@ -51,4 +54,11 @@ public class Order {
         this.dateShipped = dateShipped;
     }
 
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
+    }
 }
