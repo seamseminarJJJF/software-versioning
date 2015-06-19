@@ -3,7 +3,7 @@
  */
 public class User {
     private String name;
-    private  String email;
+    private String email;
     private String username;
     private String password;
     private String loginStatus;
@@ -46,5 +46,9 @@ public class User {
 
     public void setLoginStatus(String loginStatus) {
         this.loginStatus = loginStatus;
+    }
+
+    public boolean verifyLogin() {
+        return loginStatus.equals("valid");
     }
 }
