@@ -11,4 +11,36 @@ public class Order {
     private String dateShipped;
     private String status;
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
+
+    public String getDateShipped() {
+        return dateShipped;
+    }
+
+    public void setDateShipped(String dateShipped) {
+        this.dateShipped = dateShipped;
+    }
+
 }
