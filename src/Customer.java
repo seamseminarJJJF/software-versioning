@@ -13,16 +13,16 @@ public class Customer extends User{
 
     public Customer(long creditCard) {
         this.creditCard = creditCard;
-	interests = new <String> ArrayList();
-	interests = new <Order> ArrayList();
+        this.interests = new ArrayList<String> ();
+        this.orders = new ArrayList<Order> ();
     }
 
     public Customer(String postalAddress, long creditCard) {
 
         this.postalAddress = postalAddress;
         this.creditCard = creditCard;
-	interests = new <String> ArrayList();
-	interests = new <Order> ArrayList();
+        this.interests = new ArrayList<String>();
+        this.orders = new ArrayList<Order>();
     }
 
     public ArrayList<Order> getOrders() {
@@ -53,11 +53,11 @@ public class Customer extends User{
         this.creditCard = creditCard;
     }
 
-    public String[] getInterests() {
+    public ArrayList<String> getInterests() {
         return interests;
     }
 
-    public void setInterests(String[] interests) {
+    public void setInterests(ArrayList<String> interests) {
         this.interests = interests;
     }
 
