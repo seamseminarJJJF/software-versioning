@@ -5,11 +5,19 @@ import java.util.Date;
  *
  */
 public class Order {
-
+    private Bill bill;
     private int orderId;
     private Date creationDate;
     private String dateShipped;
     private String status;
+
+    public Bill getBill() {
+        return bill;
+    }
+
+    public void setBill(Bill bill) {
+        this.bill = bill;
+    }
 
     public String getStatus() {
         return status;
