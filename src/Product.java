@@ -9,4 +9,11 @@ public class Product {
     private long price;
 
 
+
+    public Product(int productId, String category, String description, long price) {
+        this.productId = productId;
+        this.category = category;
+        this.description = description;
+        this.price = price;
+    }
 }
